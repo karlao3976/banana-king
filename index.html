@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+
+  <style type="text/css">
+    h1 {
+      border: 15px solid transparent;
+      padding: 10px;
+      border-image: url(border.png) 32% round;
+      text-shadow: 5px 5px 10px gray;
+    }
+
+    h1,
+    h2,
+    h3 {
+      text-align: center;
+    }
+
+
+    h3 {
+      color: black;
+      transition: color 2s;
+    }
+
+    h3:hover {
+      color: green;
+    }
+
+    .banana {
+      text-align: center;
+      background-image: radial-gradient(#ffdb4d, #ffa31a);
+      transform: rotateY(900deg);
+      animation-name: color-change;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes color-change {
+      from {
+        background-image: radial-gradient(#ffdb4d, #ffa31a);
+      }
+      to {
+        background-image: radial-gradient(#ffa31a, #cc6600);
+      }
+    }
+
+    body {
+      background: #ffd480;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    The Banana King
+  </h1>
+  <h2>
+    The Banana King is an evil king who's goal is to have absolute control over sodium town
+  </h2>
+
+  <h3>
+    make sure to reserve your tickets today!
+  </h3>
+
+  <div class="banana">
+    <img src=BANANA.png>
+  </div>
+
+
+</body>
+
+</html>
