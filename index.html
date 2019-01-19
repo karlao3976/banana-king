@@ -3,9 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>title</title>
+  <title>banana-king</title>
 
   <style type="text/css">
+  
+    /*The title is being presented. Creates the border and text shadow*/
     h1 {
       border: 15px solid transparent;
       padding: 10px;
@@ -13,22 +15,25 @@
       text-shadow: 5px 5px 10px gray;
     }
 
+    /*makes the text centered*/
     h1,
     h2,
     h3 {
       text-align: center;
     }
 
-
+    /*makes the original color black and the transititon will last two seconds*/
     h3 {
       color: black;
       transition: color 2s;
     }
 
+    /*when you hover over the h3, the text will turn green*/
     h3:hover {
       color: green;
     }
-
+    
+  /*the original image is rotated across the Y axis. the background gradient is set*/
     .banana {
       text-align: center;
       background-image: radial-gradient(#ffdb4d, #ffa31a);
@@ -37,7 +42,8 @@
       animation-duration: 2s;
       animation-iteration-count: infinite;
     }
-
+    
+  /*this helps create the animation to change the background gradient*/
     @keyframes color-change {
       from {
         background-image: radial-gradient(#ffdb4d, #ffa31a);
@@ -47,6 +53,7 @@
       }
     }
 
+  /*sets the overall backgorund of the page to yellow*/
     body {
       background: #ffd480;
     }
@@ -54,6 +61,7 @@
 </head>
 
 <body>
+    <!--this is the text for the page-->
   <h1>
     The Banana King
   </h1>
@@ -65,6 +73,7 @@
     make sure to reserve your tickets today!
   </h3>
 
+    <!--this is the image source-->
   <div class="banana">
     <img src=BANANA.png>
   </div>
